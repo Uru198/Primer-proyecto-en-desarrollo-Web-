@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Succulent Shop</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Pangolin&family=Quicksand:wght@700&family=Roboto&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="css/images/leaf.png" alt="hoja" class="hoja"> 
+            </div>
+                <h2>EasyBay</h2>
+            <div class="input-wrapper">
+                <input type="search" class="input" placeholder="search for anything" data-lpignore="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor"> <!--tomado una fraccion de codigo de https://roelmagdaleno.com/snippets/icono-dentro-de-un-input-usando-html-y-css/-->
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+            <div>
+                <p class="p1">sign in</p>
+            </div>
+            <div class="hoja1">
+                <img src="css/images/cart-dark.png" alt="carrito" class="carrito" onclick="carrito()">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="tipos">
+            <ul>
+                <li>
+                    <p>Aeonium</p>
+                </li>
+                <li>
+                  <p>Andormischus</p>
+                </li>
+                <li>
+                    <p>Agave</p>
+                </li>
+                <li>
+                    <p>Aloe</p>
+                </li>
+                <li>
+                    <p>Anacampseros</p>
+                </li>
+                <li>
+                    <p>Aristaloe</p>
+                </li>
+                <li>
+                    <p>More...</p>
+                </li>
+            </ul>
+        </div>
+        <div class="titulo">
+            <h1 class="primero">Your Source for Serious Succulent Specialties</h1>
+        </div>
+    </main>
+    <div id="row">
+            <div class="row1">
+                <div class="baner0">
+                    <div class="baner0-1">Discover succulent varieties one pot or rack at a time! Discover <img src="css/images/arrow-light.png" alt="avatar" class="arrow"></div>
+                    <div class="baner0-2"><img src="css/images/succulents-1.jpg" alt="avatar" class="suculenta1" onmouseover="cambiaruno(this)" onmouseout="cambiardos(this)"></div>
+                </div>
+                <div class="baner1">
+                    <div class="baner1-1"><img src="css/images/aloe-m.jpg" alt="avatar" class="suculenta"></div>
+                    <div class="baner1-2">Spothing Aloe <img src="css/images/arrow-light.png" alt="avatar" class="arrow"></div>
+                </div>
+            </div>
+    </div>
+    <div class="row2">
+        <ul class="sucu">
+            <li>
+                <img src="css/images/aeonium-s.jpg" alt="avatar" class="suculenta0">
+                <p>Aeonium</p>
+            </li>
+            <li>
+                <img src="css/images/aloe-s.jpg" alt="avatar" class="suculenta0">
+              <p>Aloe</p>
+            </li>
+            <li>
+                <img src="css/images/cactus-s.jpg" alt="avatar" class="suculenta0">
+                <p>Cactus</p>
+            </li>
+            <li>
+                <img src="css/images/echeveria-s.jpg" alt="avatar" class="suculenta0">
+                <p>Echeveria</p>
+            </li>
+            <li>
+                <img src="css/images/sedum-s.jpg" alt="avatar" class="suculenta0">
+                <p>Sedum</p>
+            </li>
+            <li>
+                <img src="css/images/sempervivum-s.jpg" alt="avatar" class="suculenta0">
+                <p>Sempervivum</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="cookie">
+            <img src="css/images/alert-dark.png" alt="alerta">
+            <div class="text">
+                <p>
+                    This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">Cookie policy</a>
+                </p>
+            </div>
+           <button onclick="eliminaCookie()"> I accept</button>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
